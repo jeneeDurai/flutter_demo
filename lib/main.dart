@@ -6,12 +6,21 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title: Text('Flutter Demo Application'),
       centerTitle: true,
+      backgroundColor: Colors.red[700],
     ),
     body: Center(
-      child:Text("This is my body"),
+      child:Text("This is my body",
+          style:TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            color:Colors.pink[900],
+            fontFamily: 'IndieFlower',
+          )),
     ),
     floatingActionButton: FloatingActionButton(
-      child:Text("click") 
+      child:Text("click"),
+      backgroundColor: Colors.red[400]
     ),
   ),
 
