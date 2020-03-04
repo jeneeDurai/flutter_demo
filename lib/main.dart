@@ -16,11 +16,17 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[700],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Text('Hello World'),
+          Row(
+            children:<Widget>[
+              Text('Jeneepan'),
+              Text('Rajadurai')
+            ]
+          ),
+
           FlatButton(
             onPressed: (){},
             color:Colors.amber,
